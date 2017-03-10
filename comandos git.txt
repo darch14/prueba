@@ -18,17 +18,22 @@ git reset --mixed "codigo del commit"
 git reset --hard "codigo del commit" (borra el código)
 git log > commits.txt
 git help "comando"
-git branch
-git branch "rama"
-git checkout "rama"
-git merge "rama"
-git branch -D
+git branch (ver ramas)
+git branch "rama" (crear rama)
+git checkout "rama" (moverse entre ramas)
+git merge "rama" (fusionar rama traer los cambio de la otra rama)
+git branch -D (borrar la rama)
 git checkout -b "rama" (mover y crear rama al mismo tiempo)
 git clone "url github"
 git remote add origin "url repositorio github"
 git remote -v (ver si está conectado con otro repositorio)
 git remote remove origin (quitar lo anterior)
 git push origin master
+
+ssh-keygen -t rsa -b4096 -C "your_email@example.com"
+cd ~/.ssh
+cat id_rsa.pub
+ssh -T git@github.com
 
 Markdown
 git commit --amend -m "mensaje"
